@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 
 export async function GET() {
-  const categories: CatergoryItems[] = [
+  const data: CatergoryItems[] = [
     {
         name: "Living Room",
         image: "https://readdy.ai/api/search-image?query=modern%20minimalist%20living%20room%20with%20elegant%20furniture%2C%20neutral%20colors%2C%20large%20windows%2C%20natural%20light%2C%20clean%20lines%2C%20comfortable%20sofa%2C%20coffee%20table%2C%20decorative%20plants%2C%20stylish%20decor%2C%20high-end%20interior%20design%2C%20professional%20photography&width=400&height=400&seq=1&orientation=squarish",
@@ -26,5 +26,5 @@ export async function GET() {
     }
   ];
 
-  return NextResponse.json(categories);
+  return NextResponse.json(data);
 }

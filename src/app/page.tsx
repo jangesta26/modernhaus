@@ -1,8 +1,8 @@
 import CategorySection from "@/components/Section/CategorySection";
 import FeaturedProductSection from "@/components/Section/FeaturedProductSection";
 import HeroSection from "@/components/Section/HeroSection";
-import Newletter from "@/components/Section/Newletter";
-import PromotionBanner from "@/components/Section/PromotionBanner";
+import Newsletter from "@/components/Section/Newsletter";
+import PromotionBanner from "@/components/Banner/PromotionBanner";
 import SocialMedia from "@/components/Section/SocialMedia";
 import ValuePropositions from "@/components/Section/ValuePropositions";
 
@@ -13,8 +13,12 @@ export default function Home() {
       <CategorySection />
       <FeaturedProductSection />
       <ValuePropositions />
-      <PromotionBanner />
-      <Newletter />
+      <PromotionBanner 
+        title = "Summer Sale is On!"
+        description = "Get up to 50% off on selected items. Limited time offer."
+        label = "Shop the Sale"
+      />
+      <Newsletter />
       <SocialMedia />
     </>
   );

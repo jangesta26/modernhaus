@@ -54,7 +54,7 @@ const FeaturedProductSection = () => {
             </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredProducts.map((product) => (
-            <Card key={product.id} className="group overflow-hidden transition-all duration-300 hover:shadow-lg p-0 mb-0">
+            <Card key={product.id} className="group overflow-hidden transition-all duration-300 hover:shadow-lg p-0 mb-0 gap-0">
                 <div className="relative aspect-square overflow-hidden bg-gray-100">
                     <Image
                     src={product.image}
@@ -75,7 +75,7 @@ const FeaturedProductSection = () => {
                         </Button>
                     </div>
                 </div>
-            <div className="p-4 pt-0">
+            <div className="p-4">
                 <div className="flex justify-between items-start mb-2">
                     <h3 className="font-medium text-gray-800">{product.name}</h3>
                     <div className="flex items-center">

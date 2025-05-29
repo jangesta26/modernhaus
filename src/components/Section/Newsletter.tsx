@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Input } from '../ui/input'
 import { Button } from '../ui/button'
 
-const Newletter = () => {
+const Newsletter = () => {
 
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
@@ -51,4 +51,4 @@ const Newletter = () => {
   )
 }
 
-export default Newletter
+export default Newsletter
